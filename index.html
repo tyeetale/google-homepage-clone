@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Google Wannabe</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav
+      class="relative w-full flex flex-wrap items-center justify-between navbar p-4 navbar-expand-lg navbar-light"
+    >
+      <div class="justify-items-start space-x-6">
+        <a class="hover:underline" href="https://about.google/">About</a>
+        <a class="hover:underline" href="https://store.google.com/">Store</a>
+      </div>
+      <div class="flex justify-items-end items-center space-x-8">
+        <a class="hover:underline" href="https://mail.google.com/">Gmail</a>
+        <a class="hover:underline" href="https://images.google.com/">Images</a>
+
+        <div class="flex justify-items-center items-center space-x-6">
+          <!-- TODO: Add custom tooltip on bottom -->
+          <div
+            class="rounded-full w-11 h-11 flex justify-center items-center hover:bg-neutral-100"
+            title="Google Apps"
+          >
+            <svg class="w-6 h-6 text-gray-600" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"
+              />
+            </svg>
+          </div>
+          <a href="https://accounts.google.com/">
+            <img
+              class="rounded-full w-8 h-8"
+              src="./assets/profilepic.jpg"
+              alt="Profile Picture"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="grid grid-cols-1 place-content-center gap-8">
+      <img
+        class="justify-self-center mt-40"
+        src="./assets/googlelogo.png"
+        alt="Google Logo"
+      />
+      <div
+        class="flex items-center w-full mx-auto border rounded-full lg:max-w-2xl hover:shadow-lg"
+      >
+        <div class="pl-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 text-gray-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          class="w-full bg-transparent rounded-full py-[14px] pl-4 outline-none"
+        />
+        <div class="pr-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 text-blue-600 cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="justify-self-center space-x-2">
+        <!-- TODO: Check that border doesn't affect sizing -->
+        <button class="bg-neutral-100 hover:border py-2 px-4 rounded">
+          Google Search
+        </button>
+        <a href="https://trends.google.com/">
+          <button class="bg-neutral-100 hover:border py-2 px-4 rounded">
+            I'm Feeling Lucky
+          </button></a
+        >
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer
+      class="bg-stone-100 justify-between text-gray-500 flex fixed inset-x-0 bottom-0 p-4"
+    >
+      <div class="flex space-x-8">
+        <a class="hover:underline" href="https://ads.google.com/"
+          >Advertising</a
+        >
+        <a class="hover:underline" href="https://www.google.com/business/"
+          >Business</a
+        >
+        <a
+          class="hover:underline"
+          href="https://www.google.com/search/howsearchworks/"
+          >How Search Works</a
+        >
+      </div>
+      <div class="hover:underline flex items-center space-x-2">
+        <img src="./assets/leaf.png" class="w-4 h-4" alt="Leaf" />
+        <a href="https://sustainability.google/carbon-free/"
+          >Carbon neutral since 2007</a
+        >
+      </div>
+      <div class="flex space-x-8">
+        <a class="hover:underline" href="https://policies.google.com/privacy"
+          >Privacy</a
+        >
+        <a class="hover:underline" href="https://policies.google.com/terms"
+          >Terms</a
+        >
+        <!-- TODO: ADD Setting Popup-->
+        <a class="hover:underline" href="">Settings</a>
+      </div>
+    </footer>
+  </body>
+</html>
