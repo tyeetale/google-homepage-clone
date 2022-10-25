@@ -6,5 +6,6 @@ simple project with nodejs & tailwind to replicate the google homepage for acade
 
 ```
 npm install
+npm run styles
 npm start
 ```
