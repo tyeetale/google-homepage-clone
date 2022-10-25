@@ -1,2 +1,10 @@
 # google-homepage-clone
-vanilla web to replicate the google homepage
+
+simple project with nodejs & tailwind to replicate the google homepage for academic practice. Keep in mind this is just for styling, and the search goes nowhere.
+
+## To Run:
+
+```
+npm install
+npm start
+```
